@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.divTable {
+	display: table;
+	max-width: 19.925282510272rem;
+	float: right;
+	display: flex;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.divTableRow {
+	display: table-row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.divTableHeading {
+	background-color: #f8f8f8;
+	display: table-header-group;
+	font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.divTableCell,
+.divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divTableFoot {
+	background-color: #f8f8f8;
+	display: table-footer-group;
+	font-weight: bold;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.divTableCell:nth-child(1n) {
+	background-color: gainsboro;
+}
+
+.container {
+	display: flex;
+	opacity: 0.9;
+	background-color: #99aaab;
+	justify-content: center;
+}
+
+img {
+	height: 15.940226008217rem;
+}
+
+input {
+	box-sizing: border-box;
+	font-size: 1.5rem;
+	padding: 1rem;
+	display: block;
+	margin: 2rem auto;
+}
+
+body {
+	background-image: url("https://images.unsplash.com/photo-1542779283-429940ce8336?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+	background-size: 150%;
 }
